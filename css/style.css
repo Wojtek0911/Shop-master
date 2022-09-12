@@ -1,0 +1,122 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background: linear-gradient(210deg, rgb(189, 224, 254) 31%, rgb(255, 200, 221) 100%);
+  font-size: 62, 5%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 4em;
+  top: 0;
+  left: 0;
+  background-color: linear-gradient(210deg, rgb(189, 224, 254) 31%, rgb(255, 200, 221) 100%);
+}
+.navbar__nav {
+  position: relative;
+  top: 0em;
+  justify-content: space-around;
+  justify-items: flex-end;
+  display: flex;
+}
+.navbar__img {
+  position: absolute;
+  top: 0.3em;
+  padding: 0.5em 2em;
+  left: 0.5em;
+  font-size: 1.5rem;
+}
+.navbar__list {
+  position: absolute;
+  top: 0.4em;
+  right: 1em;
+  justify-content: space-around;
+  display: flex;
+  justify-items: flex-end;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2rem;
+}
+.navbar a {
+  padding: 10px;
+  font-family: "Dancing Script";
+  text-decoration: none;
+  color: #333333;
+}
+.navbar a:hover {
+  color: gold;
+  transition: 0.5s;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  max-height: 600px;
+  margin-top: 4em;
+  z-index: 10;
+}
+.header__img {
+  position: absolute;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/header-small.jpg");
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
+.header__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+.header__title {
+  position: absolute;
+  z-index: 1;
+  font-family: "Dancing Script";
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  top: 40%;
+  left: 40%;
+  color: #CDB4DB;
+  z-index: 10;
+}
+.header__text {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 43%;
+  transition: transform -50%, -50%;
+  font-size: 2rem;
+  font-family: "Dancing Script";
+  color: #CDB4DB;
+  z-index: 10;
+}
+
+@media (min-width: 968px) {
+  .header__img {
+    background-image: url(/img/header-big.jpg);
+  }
+}/*# sourceMappingURL=style.css.map */
