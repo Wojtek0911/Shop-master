@@ -31,7 +31,6 @@ body {
   top: 0em;
   justify-content: space-around;
   justify-items: flex-end;
-  display: flex;
 }
 .navbar__img {
   position: absolute;
@@ -61,6 +60,39 @@ body {
 .navbar a:hover {
   color: gold;
   transition: 0.5s;
+}
+
+.navigation {
+  font-family: "Dancing Script", cursive;
+  position: fixed;
+  top: 0;
+  display: flex;
+  left: 100%;
+  justify-items: center;
+  height: 100vh;
+  width: 100%;
+  font-size: 2.5rem;
+  background: linear-gradient(210deg, rgb(189, 224, 254) 31%, rgb(255, 200, 221) 100%);
+  z-index: 12;
+}
+.navigation__list {
+  position: absolute;
+  top: 110px;
+  left: 45%;
+  display: flex;
+}
+.navigation__item {
+  padding: 40px;
+  text-align: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  color: #333333;
+  transition: color 0.5s;
+}
+.navigation__item:hover {
+  color: gold;
 }
 
 .header {
@@ -99,7 +131,7 @@ body {
   justify-content: center;
   justify-items: center;
   top: 40%;
-  left: 40%;
+  left: 35%;
   color: #CDB4DB;
   z-index: 10;
 }
@@ -107,7 +139,7 @@ body {
   position: absolute;
   text-align: center;
   top: 60%;
-  left: 43%;
+  left: 40%;
   transition: transform -50%, -50%;
   font-size: 2rem;
   font-family: "Dancing Script";

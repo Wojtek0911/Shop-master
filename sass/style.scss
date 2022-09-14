@@ -15,10 +15,13 @@ body {
 	font-size: 62, 5%;
 }
 .container {
+	// display: flex;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1400px;
 }
+
+// NAVIGATION
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -31,7 +34,6 @@ body {
 		top: 0em;
 		justify-content: space-around;
 		justify-items: flex-end;
-		display: flex;
 	}
 	&__img {
 		position: absolute;
@@ -64,6 +66,42 @@ body {
 	}
 }
 
+
+.navigation {
+  font-family: "Dancing Script", cursive;
+  	position: fixed;
+	top: 0;
+	display: flex;
+	left:100%;
+	justify-items: center;
+	height: 100vh;
+	width: 100%;
+	font-size: 2.5rem;
+  	background: linear-gradient(210deg, rgba(189,224,254,1) 31%, rgba(255,200,221,1) 100%);
+ 	 z-index: 12;
+	  
+	  &__list {
+		  position: absolute;
+		  top: 110px;
+		  left:45%;
+		  display: flex;
+		}
+		&__item {
+			padding: 40px;
+			text-align: center;
+			flex-wrap: wrap;
+			text-decoration: none;
+			list-style: none;
+			cursor: pointer;
+			color: $nav-text-color;
+			transition: color .5s;
+			&:hover {
+				color: gold;
+			}
+	}
+}
+
+// HEADER
 .header {
 	position: relative;
 	width: 100%;
@@ -100,7 +138,7 @@ body {
 		justify-content: center;
 		justify-items: center;
 		top: 40%;
-		left: 40%;
+		left: 35%;
 		color: $main-title-color;
 		z-index: 10;
 	}
@@ -108,7 +146,7 @@ body {
 		position: absolute;
 		text-align: center;
 		top: 60%;
-		left: 43%;
+		left: 40%;
     transition: transform (-50%, -50%);
 		font-size: 2rem;
 		font-family: "Dancing Script";
@@ -116,34 +154,6 @@ body {
 		z-index: 10;
 	}
 }
-
-// .navigation {
-//   font-family: "Dancing Script", cursive;
-//   position: relative;
-//   height: 100vh;
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   font-size: 2.5rem;
-//   background-color: $main-color;
-//   color: gold;
-//   //overflow: hidden;
-//   display: none;
-//   .navlink {
-//     padding: 1.2rem;
-//     // position: absolute;
-//     justify-content: space-around;
-//     color: $nav-text-color;
-//     cursor: pointer;
-//     text-decoration: none;
-//     &:hover {
-//       color: #ffd60a;
-//       transition: 0.5s;
-//     }
-//   }
-// }
 
 @media (min-width: 968px) {
   .header{
